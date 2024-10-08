@@ -17,7 +17,9 @@ class _ToDoPageState extends State<ToDoPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: TextField(),
+        child: TextField(
+          controller: myController,
+        ),
       ),
     );
   }
