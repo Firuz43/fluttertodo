@@ -12,10 +12,17 @@ class _ToDoPageState extends State<ToDoPage> {
   //text editing controller to get access to what user types.
   TextEditingController myController = TextEditingController();
 
+
+  //greeting message variable
+  String greetingMessage = "";
+
   //getUser method
   void getUser() {
-    print(myController.text);
+    setState(() {
+      greetingMessage = "Hello " + myController.text;
+    });
   }
+
 
 
   @override
@@ -27,6 +34,8 @@ class _ToDoPageState extends State<ToDoPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Text(greetingMessage),
+              
               TextField(
                 controller: myController,
                 decoration: InputDecoration(
