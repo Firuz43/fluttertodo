@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
             },
           ),
           TodoTitle(
-            taskName: 'Make Excercise',
+            taskName: 'Make Excercises',
             taskCompleted: false,
             onChanged: (p0) {
           },
