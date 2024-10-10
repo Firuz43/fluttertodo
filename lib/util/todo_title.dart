@@ -23,10 +23,10 @@ class TodoTitle extends StatelessWidget {
           children: [
 
             //CheckBox
-            Checkbox(value: value, onChanged: onChanged),
+            Checkbox(value: taskCompleted, onChanged: onChanged),
             
             //Task name
-            Text('Make Tutorial'),
+            Text(taskName),
           ],
         ),
         decoration: BoxDecoration(

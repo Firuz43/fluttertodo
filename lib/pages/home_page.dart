@@ -19,7 +19,13 @@ class _HomePageState extends State<HomePage> {
       ),
       body: ListView(
         children: [
-          TodoTitle(),
+          TodoTitle(
+            taskName: 'Make Tutorial',
+            taskCompleted: true,
+            onChanged: (p0) {
+              
+            },
+          ),
         ],
       ),
     );
