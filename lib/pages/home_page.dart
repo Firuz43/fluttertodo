@@ -17,6 +17,11 @@ class _HomePageState extends State<HomePage> {
   ];
 
   //checkbox was tapped
+  void checkBoxChanged(bool? value, int index) {
+    setState(() {
+      todoList[index][1] = !todoList[index][1];
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -32,8 +37,8 @@ class _HomePageState extends State<HomePage> {
         itemBuilder: (context, index) {
           return TodoTitle(
             taskName: todoList[index][0], 
-            onChanged: todoList[index][1], 
-            taskCompleted: (value) => checkBoxChanged,
+            taskCompleted: todoList[index][1], 
+            onChanged: (value) => checkBoxChanged(value, index),
             );
         },
       ),
