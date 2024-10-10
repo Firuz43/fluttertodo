@@ -9,30 +9,31 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+
+  //List of todo tasks
+  List todoList = [
+    ["Make Tutorial", false],
+    ["Do Excercise", false]
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.yellow[200],
       appBar: AppBar(
         title: Text('TO DO'),
+        elevation: 0,
         backgroundColor: Colors.yellow,
       ),
-      body: ListView(
-        children: [
-          TodoTitle(
-            taskName: 'Make Tutorial',
-            taskCompleted: true,
-            onChanged: (p0) {
-              
-            },
-          ),
-          TodoTitle(
-            taskName: 'Make Excercises',
-            taskCompleted: false,
-            onChanged: (p0) {
-          },
-          ),
-        ],
+      body: ListView.builder(
+        itemCount: todoList.length,
+        itemBuilder: (context, index) {
+          return TodoTitle(
+            taskName: taskName, 
+            onChanged: onChanged, 
+            taskCompleted: taskCompleted
+            );
+        },
       ),
     );
   }
