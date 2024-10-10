@@ -16,6 +16,8 @@ class _HomePageState extends State<HomePage> {
     ["Do Excercise", false]
   ];
 
+  //checkbox was tapped
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,9 +31,9 @@ class _HomePageState extends State<HomePage> {
         itemCount: todoList.length,
         itemBuilder: (context, index) {
           return TodoTitle(
-            taskName: taskName, 
-            onChanged: onChanged, 
-            taskCompleted: taskCompleted
+            taskName: todoList[index][0], 
+            onChanged: todoList[index][1], 
+            taskCompleted: (value) => checkBoxChanged,
             );
         },
       ),
