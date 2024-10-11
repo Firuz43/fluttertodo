@@ -28,7 +28,7 @@ class TodoTitle extends StatelessWidget {
             //Task name
             Text(
               taskName,
-              style: TextStyle(decoration: TextDecoration.lineThrough),
+              style: TextStyle(decoration: taskCompleted ? TextDecoration.lineThrough : TextDecoration.none),
               ),
             
           ],
