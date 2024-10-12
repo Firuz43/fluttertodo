@@ -21,16 +21,17 @@ class TodoTitle extends StatelessWidget {
 
         child: Row(
           children: [
-
+            
             //CheckBox
             Checkbox(value: taskCompleted, onChanged: onChanged),
-            
+
             //Task name
             Text(
               taskName,
-              style: TextStyle(decoration: taskCompleted ? TextDecoration.lineThrough : TextDecoration.none),
+              style: TextStyle(
+                decoration: taskCompleted ? TextDecoration.lineThrough : TextDecoration.none
+                ),
               ),
-            
           ],
         ),
         decoration: BoxDecoration(
