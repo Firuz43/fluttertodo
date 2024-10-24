@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
     // );
 
     return MaterialApp(
-      home: HomePage(),
+      home: HomePage(), //homepage
       theme: ThemeData(primarySwatch: Colors.yellow),
     );
   }
