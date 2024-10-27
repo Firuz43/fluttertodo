@@ -27,8 +27,19 @@ class Articles extends StatelessWidget {
               ),
               SizedBox(height: 8),
               Text(
-                "Artic"
+                "Article Title Goes Here",
+                style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
               ),
+              SizedBox(height: 4),
+              Text(
+                "Published on Oct 24, 2023",
+                style: TextStyle(color: Colors.grey[700]),
+              ),
+              SizedBox(height: 16),
+              Text(
+                "This is short summary of the article. It provides main content encourages readers to click the article and to explore and now more about it",
+                style: TextStyle(fontSize: 16),
+              )
             ],
           ),
         ),
