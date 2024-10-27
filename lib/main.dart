@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todoapp/pages/home_page.dart';
-import 'package:todoapp/pages/todo_page.dart';
+import 'package:todoapp/pages/articles.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,8 +17,13 @@ class MyApp extends StatelessWidget {
     // ); you have 
 
     return MaterialApp(
-      home: HomePage(), //homepage
-      theme: ThemeData(primarySwatch: Colors.yellow),
+      // home: HomePage(), //homepage
+      // theme: ThemeData(primarySwatch: Colors.yellow),
+      // home: MyTest(),
+      // home: Emailtest(),
+      // home: Rowtest(),
+      // home: Productcard(),
+      home: Articles(),
     );
   }
 }
