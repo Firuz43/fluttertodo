@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todoapp/pages/blogpost.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
       // home: Rowtest(),
       // home: Productcard(),
       // home: Articles(),
+      home: Blogpost(),
     );
   }
 }
