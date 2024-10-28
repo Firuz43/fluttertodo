@@ -24,7 +24,8 @@ class MyApp extends StatelessWidget {
       // home: Rowtest(),
       // home: Productcard(),
       // home: Articles(),
-      home: Blogpost(),
+      // home: Blogpost(),
+      
     );
   }
 }
