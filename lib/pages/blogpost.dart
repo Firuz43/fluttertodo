@@ -47,13 +47,14 @@ class Blogpost extends StatelessWidget {
                   ),
                 ),
                 ButtonBar(
-                  alignment: MainAxisAlignment.start,
+                  alignment: MainAxisAlignment.spaceAround,
                   children: [
                     TextButton(
                       onPressed: () {},
                       child: Row(
                         children: [
                           Icon(Icons.thumb_up), 
+                          SizedBox(width: 8,),
                           Text("Like"
                           ),
                         ],
@@ -64,6 +65,7 @@ class Blogpost extends StatelessWidget {
                       child: Row(
                         children: [
                           Icon(Icons.comment),
+                          SizedBox(width: 8),
                           Text("Comment")
                         ],
                       ),
@@ -73,6 +75,7 @@ class Blogpost extends StatelessWidget {
                       child: Row(
                         children: [
                           Icon(Icons.share),
+                          SizedBox(width: 8),
                           Text("Share")
                         ],
                       ),
