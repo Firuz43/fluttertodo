@@ -35,7 +35,7 @@ class Blogpost extends StatelessWidget {
                         "Blog Post Title",
                         style: TextStyle(
                           fontSize: 20,
-                          fontWeight: FontWeight.bold,
+                          fontWeight: FontWeight.bold, //
                         ),
                       ),
                       SizedBox(height: 4,),
