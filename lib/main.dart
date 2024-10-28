@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todoapp/pages/blogpost.dart';
+import 'package:todoapp/pages/selftest.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       // home: Productcard(),
       // home: Articles(),
       // home: Blogpost(),
-      
+      home: Selftest(),
     );
   }
 }
