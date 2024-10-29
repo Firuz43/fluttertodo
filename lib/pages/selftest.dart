@@ -14,7 +14,7 @@ class Selftest extends StatelessWidget {
           backgroundColor: Colors.blue,
       ),
       body: Padding(
-        padding:  EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(8.0),
         child: Card(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -26,11 +26,31 @@ class Selftest extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
               Text("The blog post data"),
-              Text('DATASTRIP'),
+              Text('DATASTRIP'),//
+              Row(
+                children: [
+                  Icon(Icons.email, color: Colors.red,),
+                  SizedBox(width: 4),
+                  Text('firuzchamarov@gmail.com'),
+                  SizedBox(width: 10),
+                  Icon(Icons.home, color: Colors.green),
+                  Text('Home ')
+                ],
+              ),
+              Center(
+                child: Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Container(
+                    
+                    width: 300,
+                    height: 200,
+                    child: Card(
+                      child: Text('data'),
+                    ),
+                  ),
+                ),
+              )
             ],
-            Row(children: [
-              Text("data")
-            ],)
           ),
         ),
       ),
