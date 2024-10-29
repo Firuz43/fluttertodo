@@ -41,7 +41,6 @@ class Selftest extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(20.0),
                   child: Container(
-                    
                     width: 300,
                     height: 200,
                     child: Card(
@@ -49,6 +48,20 @@ class Selftest extends StatelessWidget {
                     ),
                   ),
                 ),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Card(
+                    child: Row(                 
+                      children: [
+                        Text("DATA"),
+                        Text("TGHEREE")
+                      ],
+                    ),
+                    
+                  )
+                ],
               )
             ],
           ),
