@@ -34,7 +34,7 @@ class Selftest extends StatelessWidget {
                   Text('firuzchamarov@gmail.com'),
                   SizedBox(width: 10),
                   Icon(Icons.home, color: Colors.green),
-                  Text('Home ')
+                  Text('Home')
                 ],
               ),
               Center(
