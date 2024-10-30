@@ -14,12 +14,32 @@ class Rowtest extends StatelessWidget {
             ),
             backgroundColor: Colors.blue,
         ),
-        body: Container(
-          color: Colors.yellow,
-          height: 200,
-          width: 200,
-          child: Card(
-            child: Text("DATA"),
+        body: Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: Container(
+            color: Colors.yellow,
+            child: Card(
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("data"),
+                    Text("TEHER"),
+                    Text("TEHER"),
+                    Text("TEHER"),
+                    Text("TEHER"),
+                    Row(
+                      children: [
+                        Text("ASDDDQWE"),
+                        SizedBox(width: 10),
+                        Text("SADQWEE"),
+                      ],
+                    )
+                  ],
+                ),
+              ),
+            ),
           ),
         ),
       ),
