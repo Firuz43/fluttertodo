@@ -35,6 +35,19 @@ class Rowtest extends StatelessWidget {
                         SizedBox(width: 10),
                         Text("SADQWEE"),
                       ],
+                    ),
+                    Column(
+                      children: [
+                        Text("FOREVER IN YOUR DREAMS"),
+                        SizedBox(height: 10,),
+                        Text("SSSQQQQQQQQQQ"),
+                        Image.network(
+                          'https://via.placeholder.com/400x200',
+                          height: 200,
+                          width: double.infinity,
+                          fit: BoxFit.cover,
+                        )
+                      ],
                     )
                   ],
                 ),
