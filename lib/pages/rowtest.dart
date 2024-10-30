@@ -9,19 +9,17 @@ class Rowtest extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text(
-            "Row of icons",
+            "Testing",
             style: TextStyle(color: Colors.white),
             ),
-          backgroundColor: Colors.blue,
+            backgroundColor: Colors.blue,
         ),
-        body: Center(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Icon(Icons.home, color: Colors.blue, size: 40),
-              Icon(Icons.favorite, color: Colors.red, size: 40),
-              Icon(Icons.settings, color: Colors.grey, size: 40)
-            ],
+        body: Container(
+          color: Colors.yellow,
+          height: 200,
+          width: 200,
+          child: Card(
+            child: Text("DATA"),
           ),
         ),
       ),
