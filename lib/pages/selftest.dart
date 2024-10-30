@@ -50,16 +50,23 @@ class Selftest extends StatelessWidget {
                 ),
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Card(
-                    child: Row(                 
-                      children: [
-                        Text("DATA"),
-                        Text("TGHEREE")
-                      ],
+                  Center(
+                    child: Container(
+                      width: 300,
+                      height: 200,
+                      color: Colors.blue,
+                      child: Row(           
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,      
+                        children: [
+                          Text("DATA"),
+                          Text("TGHEREE"),
+                          Text("QWERTYY")
+                        ],
+                      ),
+                      
                     ),
-                    
                   )
                 ],
               )
