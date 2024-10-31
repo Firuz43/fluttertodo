@@ -29,7 +29,7 @@ class Rowtest extends StatelessWidget {
                     Text("TEHER"),
                     Text("TEHER"),
                     Text("TEHER"),
-                    Text("TEHER"),
+                    Text("THERE"),
                     Row(
                       children: [
                         Text("ASDDDQWE"),
