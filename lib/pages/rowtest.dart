@@ -35,6 +35,8 @@ class Rowtest extends StatelessWidget {
                         Text("ASDDDQWE"),
                         SizedBox(width: 10),
                         Text("SADQWEE"),
+                        Text("SADQWEE"),
+                        Text("SADQWEE"),
                       ],
                     ),
                     Column(
