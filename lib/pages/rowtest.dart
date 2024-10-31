@@ -29,6 +29,7 @@ class Rowtest extends StatelessWidget {
                     Text("TEHER"),
                     Text("TEHER"),
                     Text("TEHER"),
+                    Text("TEHER"),
                     Row(
                       children: [
                         Text("ASDDDQWE"),
@@ -46,7 +47,9 @@ class Rowtest extends StatelessWidget {
                           height: 200,
                           width: double.infinity,
                           fit: BoxFit.cover,
-                        )
+                        ),
+                        SizedBox(height: 20,),
+                        Text("Some random")
                       ],
                     )
                   ],
