@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todoapp/pages/blogpost.dart';
+import 'package:todoapp/pages/chatbubble.dart';
 import 'package:todoapp/pages/rowtest.dart';
 import 'package:todoapp/pages/selftest.dart';
 
@@ -23,11 +24,12 @@ class MyApp extends StatelessWidget {
       // theme: ThemeData(primarySwatch: Colors.yellow),
       // home: MyTest(),
       // home: Emailtest(),
-      home: Rowtest(),
+      // home: Rowtest(),
       // home: Productcard(),
       // home: Articles(),
       // home: Blogpost(),
       // home: Selftest(),
+      home: Chatbubble(),
     );
   }
 }

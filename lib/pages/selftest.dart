@@ -27,7 +27,7 @@ class Selftest extends StatelessWidget {
               ),
               Text("The blog post data"),
               Text('DATASTRIP'),//
-              Row(
+              Row(//
                 children: [
                   Icon(Icons.email, color: Colors.red,),
                   SizedBox(width: 4),
