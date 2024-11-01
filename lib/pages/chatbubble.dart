@@ -53,8 +53,14 @@ class ChattingBubble extends StatelessWidget {
           color: isMe ? Colors.blueAccent : Colors.grey[300],
           borderRadius: BorderRadius.only(
             topLeft: Radius.circular(isMe ? 12 : 0),
-            topRight: 
+            topRight: Radius.circular(isMe ? 0 : 12),
+            bottomLeft: Radius.circular(12),
+            bottomRight: Radius.circular(12)
           )
+        ),
+        child: Text(
+          text,//
+          style: TextStyle(color: isMe ? Colors.white : Colors.black),
         ),
       ),
     );
