@@ -46,7 +46,7 @@ class ChattingBubble extends StatelessWidget {
     return Align(
       alignment: isMe ? Alignment.centerRight : Alignment.centerLeft,
       child: Container(
-        padding: EdgeInsets.all(10),
+        padding: EdgeInsets.all(10),//
         margin: EdgeInsets.symmetric(vertical: 5),
         constraints: BoxConstraints(maxWidth: 200),
         decoration: BoxDecoration(
