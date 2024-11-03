@@ -1,11 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:todoapp/pages/blogpost.dart';
-import 'package:todoapp/pages/chatbubble.dart';
-import 'package:todoapp/pages/rowtest.dart';
-import 'package:todoapp/pages/selftest.dart';
+import 'package:provider/provider.dart';
+import 'package:todoapp/pages/home_page.dart';
+import 'package:todoapp/pages/homepage.dart';
+import 'package:todoapp/pages/theme/dark_mode.dart';
+import 'package:todoapp/pages/theme/light_mode.dart';
+import 'package:todoapp/theme/theme_provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (context) => ThemeProvider(),
+      child: const MyApp(), 
+      )
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -20,7 +27,6 @@ class MyApp extends StatelessWidget {
     // ); you have 
 
     return MaterialApp(
-      // home: HomePage(), //homepage
       // theme: ThemeData(primarySwatch: Colors.yellow),
       // home: MyTest(),
       // home: Emailtest(),
@@ -29,7 +35,9 @@ class MyApp extends StatelessWidget {
       // home: Articles(),
       // home: Blogpost(),
       // home: Selftest(),
-      home: Chatbubble(),
+      // home: Chatbubble(),
+      home: Homepage(),
+      theme: darkMode,
     );
   }
 }
