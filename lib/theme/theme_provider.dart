@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:todoapp/pages/theme/dark_mode.dart';
-import 'package:todoapp/pages/theme/light_mode.dart';
+import 'package:todoapp/theme/dark_mode.dart';
+import 'package:todoapp/theme/light_mode.dart';
 
 class ThemeProvider extends ChangeNotifier {
 

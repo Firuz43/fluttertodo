@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:todoapp/pages/home_page.dart';
 import 'package:todoapp/pages/homepage.dart';
-import 'package:todoapp/pages/theme/dark_mode.dart';
-import 'package:todoapp/pages/theme/light_mode.dart';
 import 'package:todoapp/theme/theme_provider.dart';
 
 void main() {
@@ -36,8 +33,8 @@ class MyApp extends StatelessWidget {
       // home: Blogpost(),
       // home: Selftest(),
       // home: Chatbubble(),
-      home: Homepage(),
-      theme: darkMode,
+      home: const Homepage(),
+      // theme: Provider.of<ThemeProvider>(context).themeData,
     );
   }
 }
