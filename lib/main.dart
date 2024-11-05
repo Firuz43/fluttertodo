@@ -35,6 +35,7 @@ class MyApp extends StatelessWidget {
       // home: Chatbubble(),
       home: const Homepage(),
       // theme: Provider.of<ThemeProvider>(context).themeData,
+      theme: Provider.of<ThemeProvider>(context).themeData,
     );
   }
 }
