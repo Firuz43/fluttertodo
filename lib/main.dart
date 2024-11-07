@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:todoapp/database/habbit_databse.dart';
 import 'package:todoapp/pages/homepage.dart';
 import 'package:todoapp/theme/theme_provider.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();  //added
+
+  //initialize database
+  await HabbitDatabse.initialize();
+  await HabbitDatabse().saveFirstLauncDate();
+
   runApp(
     ChangeNotifierProvider(
       create: (context) => ThemeProvider(),
