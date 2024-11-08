@@ -56,10 +56,25 @@ class HabbitDatabse extends ChangeNotifier{
 
     //save to db
     await isar.writeTxn(() => isar.habits.put(newHabit));
+
+    // re-read from db
+    readHabits();
   }
 
 
+
   // R E A D - read saved habbits from db
+  Future<void> readHabits() async {
+    // fetch all habits from db
+    List<Habit> fetchedHabits = await isar.habits.where().findAll();
+
+    // give to current habits
+    currentHabbits.clear();
+    currentHabbits.addAll(fetchedHabits);
+
+    //update UI
+    notifyListeners();
+  }
 
   // U P D A T E- edit habbit name
 
