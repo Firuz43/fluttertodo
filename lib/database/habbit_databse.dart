@@ -43,7 +43,7 @@ class HabbitDatabse extends ChangeNotifier{
 
   C R U D X O P E R A T I O N S
   
-   */
+  */
 
 
   // List of habits
@@ -68,7 +68,7 @@ class HabbitDatabse extends ChangeNotifier{
     // fetch all habits from db
     List<Habit> fetchedHabits = await isar.habits.where().findAll();
 
-    // give to current habits
+    // give to current habits //
     currentHabbits.clear();
     currentHabbits.addAll(fetchedHabits);
 
