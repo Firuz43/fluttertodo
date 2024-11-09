@@ -38,7 +38,6 @@ class HabbitDatabse extends ChangeNotifier{
   }
 
 
-
   /*
 
   C R U D X O P E R A T I O N S
@@ -46,7 +45,7 @@ class HabbitDatabse extends ChangeNotifier{
   */
 
 
-  // List of habits
+  // List of habits //
   final List<Habit> currentHabbits = [];
 
   // C R E A T E - add a new habbit 
