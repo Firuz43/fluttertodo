@@ -57,7 +57,7 @@ class HabbitDatabse extends ChangeNotifier{
     //save to db
     await isar.writeTxn(() => isar.habits.put(newHabit));
 
-    // re-read from db
+    // re-read from db//
     readHabits();
   }
 
