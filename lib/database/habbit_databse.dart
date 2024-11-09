@@ -50,6 +50,7 @@ class HabbitDatabse extends ChangeNotifier{
 
   // C R E A T E - add a new habbit 
   Future<void> addHabit(String habitName) async {
+
     //create a new habit
     final newHabit = Habit()..name = habitName;
 
@@ -64,6 +65,7 @@ class HabbitDatabse extends ChangeNotifier{
 
   // R E A D - read saved habbits from db
   Future<void> readHabits() async {
+
     // fetch all habits from db
     List<Habit> fetchedHabits = await isar.habits.where().findAll();
 
@@ -75,14 +77,16 @@ class HabbitDatabse extends ChangeNotifier{
     notifyListeners();
   }
 
-  // U P D A T E- edit habbit name 
+  // U P D A T E - check habit on and off
   Future<void> updateHabitCompletion(int id, bool isCompleted) async {
+
     // find the specific habit
     final habit = await isar.habits.get(id);
 
     // update completion status
     if(habit != null) {
       await isar.writeTxn(() async {
+
         // if habit is completed -> add the current date to the completedDays list
         if(isCompleted && !habit.completedDays.contains(DateTime.now())) {
           // today
@@ -114,5 +118,27 @@ class HabbitDatabse extends ChangeNotifier{
     }
   }
 
-  // D E L E T E - delete habbit from db
+  // U P D A T E - edit habit name
+  Future<void> updateHabitName(int id, String newName) async {
+    // find the specific habit
+    final habit = await isar.habits.get(id);
+
+    //update habit name
+    if(habit != null) {
+
+      //update name
+      await isar.writeTxn(() async {
+        habit.name = newName;
+
+        //save upadted habit back to the db
+        await isar.habits.put(habit);
+      });
+    }
+
+
+    //re-read from db
+    readHabits();
+  }
+
+  
 }
