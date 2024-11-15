@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:todoapp/theme/theme_provider.dart';
+import 'package:todoapp/components/my_drawer.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -12,16 +10,7 @@ class Homepage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.blue,
       ),
-      drawer: Drawer(
-        backgroundColor: Theme.of(context).colorScheme.background,
-        child: Center(
-          child: CupertinoSwitch(
-            value: Provider.of<ThemeProvider>(context).isDarkMode, 
-            onChanged: (value) =>
-              Provider.of<ThemeProvider>(context, listen: false).toggleTheme(),
-            ),
-          ),
-      ),
+      drawer: MyDrawer(),
     );
   }
 }
