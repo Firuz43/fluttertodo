@@ -11,6 +11,8 @@ class Homepage extends StatelessWidget {
         backgroundColor: Colors.blue,
       ),
       drawer: const MyDrawer(),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {}),
     );
   }
 }
