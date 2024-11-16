@@ -10,7 +10,7 @@ class Homepage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.blue,
       ),
-      drawer: MyDrawer(),
+      drawer: const MyDrawer(),
     );
   }
 }
