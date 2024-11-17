@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
       // theme: ThemeData(primarySwatch: Colors.yellow),
       // home: MyTest(),
       // home: Emailtest(),
-      // home: Rowtest(),
+      // home: Rowtest(),//
       // home: Productcard(),
       // home: Articles(),
       // home: Blogpost(),
