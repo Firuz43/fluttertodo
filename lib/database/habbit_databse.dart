@@ -92,7 +92,7 @@ class HabbitDatabse extends ChangeNotifier{
           // today
           final today = DateTime.now();
 
-          // add the current date if it's not already in the list//
+          // add the current date if it's not already in the list////
           habit.completedDays.add(
             DateTime(
               today.year,
