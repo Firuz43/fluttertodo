@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:todoapp/database/habbit_databse.dart';
+import 'package:todoapp/pages/chatbubble.dart';
 import 'package:todoapp/pages/homepage.dart';
 import 'package:todoapp/theme/theme_provider.dart';
 
@@ -44,8 +45,8 @@ class MyApp extends StatelessWidget {
       // home: Articles(),
       // home: Blogpost(),
       // home: Selftest(),
-      // home: Chatbubble(),
-      home: const Homepage(),
+      home: Chatbubble(),
+      // home: const Homepage(),
       // theme: Provider.of<ThemeProvider>(context).themeData,
       theme: Provider.of<ThemeProvider>(context).themeData,
     );
