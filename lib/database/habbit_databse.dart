@@ -45,7 +45,7 @@ class HabbitDatabse extends ChangeNotifier{
   */
 
 
-  // List of habits //sssss
+  // List of habits //sssssss
   final List<Habit> currentHabbits = [];
 
   // C R E A T E - add a new habbit 
