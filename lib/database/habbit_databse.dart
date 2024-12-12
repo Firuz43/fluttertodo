@@ -73,7 +73,7 @@ class HabbitDatabse extends ChangeNotifier{
     currentHabbits.clear();
     currentHabbits.addAll(fetchedHabits);
 
-    //update UI
+    //update UI//
     notifyListeners();
   }
 
